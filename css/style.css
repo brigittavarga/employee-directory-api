@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #331E38;
+    background: hsla(346, 40%, 50%, 1);
+    background: linear-gradient(135deg, hsla(346, 40%, 50%, 0.6) 50%, hsla(32, 69%, 57%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(346, 40%, 50%, 0.6) 50%, hsla(32, 69%, 57%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(346, 40%, 50%, 0.6) 50%, hsla(32, 69%, 57%, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    max-height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+}
+
+img {
+    border-radius: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 140px;
+}
+
+.card .text-container {
+    padding-right: 20px;
+}
+
+.card h2 {
+    font-size: 1em;
+}
+
+.card {
+    margin-top: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+}
+
+.modal,
+.card {
+    width: 375px;
+    border-radius: 5px;
+    line-height:1.8;
+}
+
+.modal {
+    border: 1px solid #796465;
+    margin: 15% auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    margin: 30px 0 0 55px;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.6em;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@media only screen and (max-width: 1184px) {
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    header {
+        margin: 30px 0 0 0px;
+    }
+}
